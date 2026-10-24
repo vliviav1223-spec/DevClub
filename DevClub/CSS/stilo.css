@@ -1,0 +1,30 @@
+#titulo {
+    color: #fff;
+}
+
+/*
+RGB
+    GREEN
+    RED
+    BLUE
+HEXADECIMAL 0123456789ABCDEF
+DECIMAL 0123456789
+*/
+
+#paragrafo{
+    color: #fff;
+}
+
+.botao{
+    background-color: #abf76e;
+    color: #070707;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 
+.texto, .botao, p, #titulo {
+    color: red;
+} 
+*/

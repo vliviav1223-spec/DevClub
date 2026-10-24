@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style7.css">
+    <title>CSS</title>
+</head>
+<body>
+    <a href="www.google.com">Teste de link</a>
+    <br><br>
+    <input value="Esse é meu input" readonly>
+
+
+    <ul>
+        <li>Oi tudo bem</li>
+        <li>Nao estou bem</li>
+        <li>To nem ai</li>
+        <li>Cala sua boca lixo</li>
+    </ul>
+
+
+
+
+
+</body>
+</html>
+
+<!-- /* =========================================
+   PSEUDO-CLASSES (Guia Completo)
+   ========================================= */
+
+/* :active → Quando o elemento está ativo, ou seja, está sendo pressionado no momento */
+a:active {
+  color: red;
+}
+
+/* :visited → Seleciona links que o usuário já visitou no navegador */
+a:visited {
+  color: purple;
+}
+
+/* :hover → Quando o mouse passa em cima do elemento */
+button:hover {
+  background-color: blue;
+}
+
+/* :checked → Usado em radio buttons, checkboxes ou select quando estão marcados */
+input[type="checkbox"]:checked {
+  accent-color: green;
+}
+
+/* :disabled → Seleciona elementos desativados (botões ou inputs travados) */
+button:disabled {
+  opacity: 0.5;
+}
+
+/* :enabled → O oposto do disabled; seleciona elementos habilitados e utilizáveis */
+input:enabled {
+  border-color: gray;
+}
+
+/* :focus → Aplicado quando um elemento recebe foco (ex: clicou dentro de um input para digitar ou usou Tab) */
+input:focus {
+  outline: 2px solid blue;
+}
+
+/* :read-only → Seleciona inputs ou textareas que são apenas de leitura */
+input:read-only {
+  background-color: #eee;
+}
+
+/* :empty → Seleciona elementos que não têm nenhum filho (completamente vazios por dentro) */
+div:empty {
+  display: none;
+}
+
+/* :first-child → O primeiro filho de um elemento pai (ex: primeira <li> de uma <ul> ou primeiro <span> de uma <div>) */
+ul li:first-child {
+  font-weight: bold;
+}
+
+/* :first-of-type → O primeiro elemento do seu tipo específico entre os irmãos do mesmo pai */
+p:first-of-type {
+  color: blue;
+}
+
+/* :last-child → O último filho do elemento pai */
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* :last-of-type → O último elemento do seu tipo específico entre os irmãos do pai */
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* :not() → Estiliza todos os elementos, EXCETO o que está dentro dos parênteses */
+input:not([type="submit"]) {
+  background-color: white;
+}
+
+/* :nth-child() → Seleciona um elemento baseado na sua posição numérica exata (Ex: :nth-child(3) pega o terceiro) */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Seleciona as linhas pares da tabela */
+}
+
+/* :nth-last-child() → Seleciona o elemento baseado na posição, mas contando de trás para frente (do último para o primeiro) */
+ul li:nth-last-child(1) {
+  color: gray;
+}
+
+
+/* =========================================
+   RESET UNIVERSAL E CAIXAS
+   ========================================= */
+
+* {
+  /* Remove as margens padrão que os navegadores colocam nos elementos */
+  margin: 0;
+  
+  /* Remove o preenchimento interno padrão dos navegadores */
+  padding: 0;
+  
+  /* Faz o padding e a borda ficarem DENTRO da largura total da caixa (evita estourar o layout) */
+  box-sizing: border-box;
+} -->
+

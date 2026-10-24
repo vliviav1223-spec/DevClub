@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.vo{
+
+}
+
+.pai{
+    width: 50vw;
+    height: 50vh;
+    background: #0000FF;
+    color: #FFFFFF;
+    font-weight: lighter;
+    /* font-size: 32px; */
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+.filho{
+    width: 50%;
+    height: 50%;
+    background: #FF0000;
+    color: #FFFFFF;
+    font-weight: bolder;
+    /* font-size: 0.5em; */
+     font-family: 'Roboto', sans-serif;
+     line-height: 50px;
+     letter-spacing: 5px;
+     word-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+
+}
+
+
+/* em serve para dimensionar elementos em relação ao tamanho da fonte do elemento pai, relativo */

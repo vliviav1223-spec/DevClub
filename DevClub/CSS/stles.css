@@ -1,0 +1,30 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lab(0% 0 0);
+    margin: 20px;
+}
+
+h1 {
+    color: lab(60% 10 10);
+}
+
+p {
+    color: lab(95.6% 2.01 0.7);
+    line-height: 1.6;
+}
+
+button {
+    background-color: lab(60% 10 10);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lab(30% 10 10);
+    border-color: lch(57.25% 67.42 45.28);
+}

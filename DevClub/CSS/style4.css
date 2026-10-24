@@ -1,0 +1,35 @@
+.box{
+    background: #ff1395;
+    height: 50px;
+    width: 50px;
+
+}
+
+.box-2{
+    background: #FFFF00;
+}
+
+.box-3{
+    background: #0003FF;
+}
+
+/* 1. block (Bloco)
+Comportamento: O elemento ocupa 100% da largura disponível na horizontal (toda a linha) e força uma quebra de linha antes e depois dele.
+
+Tamanho: Podes alterar livremente a largura (width) e a altura (height). Se não especificares a largura, ele estica-se para preencher o espaço do elemento pai.
+
+Exemplos comuns: <div>, <p>, <h1> a <h6>, <section>, <ul>.
+
+2. inline (Em linha)
+Comportamento: O elemento ocupa apenas o espaço necessário para o seu conteúdo. Ele fica lado a lado com outros elementos (não força quebras de linha).
+
+Tamanho: Não podes alterar a largura (width) nem a altura (height). As margens e preenchimentos verticais (top e bottom) podem não se comportar como esperas.
+
+Exemplos comuns: <span>, <a>, <strong>, <em>.
+
+3. inline-block (O meio-termo perfeito)
+Comportamento: Fica lado a lado com outros elementos (como o inline), mas permite aplicar largura e altura (como o block).
+
+Tamanho: Podes definir width, height, e todas as margens e preenchimentos funcionam perfeitamente sem quebrar o layout.
+
+Uso comum: Perfeito para criar botões, menus de navegação horizontais ou cartões que precisem de alinhar lado a lado mantendo dimensões próprias. */

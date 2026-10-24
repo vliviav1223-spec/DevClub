@@ -1,0 +1,151 @@
+1. Espaçamentos e Dimensões (O Modelo de Caixa)
+margin (Margem):
+
+O que faz: Cria espaço fora do elemento. Serve para afastar a caixa de outros elementos ao redor dela.
+
+Exemplo: margin: 20px; empurra tudo o que está em volta, criando um respiro externo.
+
+padding (Preenchimento):
+
+O que faz: Cria espaço dentro do elemento, entre o conteúdo (texto/imagem) e a borda dele.
+
+Exemplo: padding: 15px; faz com que o texto não fique grudado nas bordas do botão ou do card.
+
+box-sizing:
+
+O que faz: Controla como a largura e a altura de um elemento são calculadas.
+
+O segredo: O padrão do navegador (content-box) soma o padding e a borda à largura final, o que costuma quebrar o layout. Usar box-sizing: border-box; faz com que o padding e a borda fiquem dentro da largura que você definiu, facilitando muito a sua vida.
+
+height (Altura) e width (Largura):
+
+O que fazem: Definem o tamanho vertical (height) e horizontal (width) de um elemento.
+
+Exemplo: width: 100%; ocupa toda a largura disponível, enquanto height: 50vh; ocupa metade da altura da tela.
+
+2. Layout Moderno e Alinhamento
+display: flex (Flexbox):
+
+O que faz: Transforma um elemento em um "contêiner flexível". Ele é o salvador da pátria para alinhar coisas na horizontal ou na vertical com facilidade.
+
+Exemplo: Se você colocar display: flex; em uma div que tem três botões dentro, eles automaticamente ficam um ao lado do outro, em vez de empilhados.
+
+gap:
+
+O que faz: Cria um espaçamento uniforme entre os itens filhos de um contêiner (funciona perfeitamente com Flexbox e Grid).
+
+Exemplo: gap: 10px; deixa um espaço de 10 pixels entre cada item sem precisar ficar aplicando margem individualmente em cada um.
+
+1. Cores e Fundo (Visual)
+color: Muda a cor do texto.
+
+Ex: color: #333; ou color: red;
+
+background-color: Define a cor de fundo de um elemento.
+
+Ex: background-color: #f0f0f0;
+
+background-image: Coloca uma imagem de fundo.
+
+Ex: background-image: url('foto.jpg');
+
+background-size: Como a imagem de fundo se ajusta (cover cobre tudo, contain cabe inteira).
+
+opacity: Define a transparência (vai de 0 totalmente invisível até 1 totalmente opaco).
+
+2. Fontes e Textos (Tipografia)
+font-family: Escolhe a fonte (tipo Arial, Roboto, sans-serif).
+
+font-size: Tamanho da letra (ex: 16px, 1.5rem).
+
+font-weight: Grossura/peso da fonte (ex: bold, 400 para normal, 700 para negrito).
+
+text-align: Alinhamento do texto (left, center, right, justify).
+
+text-decoration: Linhas no texto (muito usado para tirar o sublinhado de links com none).
+
+line-height: Altura da linha (espaçamento vertical entre as linhas de texto).
+
+3. Layout e Posicionamento (Além do Flexbox)
+display: Muda o comportamento do elemento na tela.
+
+block (ocupa a linha toda), inline (fica no meio do texto), flex (organiza em linha/coluna), grid (cria grades bidimensionais), none (sumir com o elemento).
+
+position: Como o elemento se posiciona na página.
+
+static (padrão), relative (relativo ao lugar dele), absolute (grudado no pai mais próximo que seja relative/absolute), fixed (gruda na tela inteira, não some nem rolando a página), sticky (gruda ao rolar até um ponto).
+
+top / bottom / left / right: Mexem na distância do elemento quando ele usa position (diferente de margin!).
+
+z-index: A "camada" do elemento. Quem tem o número maior fica por cima (tipo Photoshop).
+
+4. Bordas e Efeitos Visuais
+border: Adiciona borda (ex: 1px solid black).
+
+border-radius: Arredonda as pontas (ex: 8px para um card, 50% para virar uma bola perfeita).
+
+box-shadow: Joga uma sombra na caixa.
+
+Ex: box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+overflow: O que acontece se o conteúdo passar do tamanho da caixa.
+
+hidden (esconde o que passar), scroll (cria barra de rolagem), auto (cria barra só se precisar).
+
+5. Transições e Animações
+transition: Suaviza a mudança de um estado para outro (ex: quando passa o mouse por cima num botão).
+
+Ex: transition: background-color 0.3s ease;
+
+transform: Altera a forma do elemento sem mexer no layout em volta (mexer em escala, rotação, etc.).
+
+Ex: transform: scale(1.1); (dá um zoom) ou rotate(45deg).
+
+cursor: Muda o formato do mouse quando passa por cima (ex: cursor: pointer; vira a mãozinha de link).
+
+
+Os 5 Tipos de position
+static (O Padrão)
+
+O que é: É como todo elemento nasce. Ele segue o fluxo normal da página (um embaixxo do outro ou lado a lado).
+
+Detalhe importante: Propriedades como top, bottom, left, right e z-index não funcionam aqui. Esqueça elas se o elemento for static.
+
+relative (Relativo a si mesmo)
+
+O que é: Ele começa no lugar normal dele (static), mas você pode dar um empurrãozinho nele usando top, left, etc.
+
+Detalhe importante: O espaço original que ele ocupava na página continua lá, vazio. É como se ele flutuasse um pouquinho por cima do próprio lugar, sem bagunçar os outros elementos em volta.
+
+absolute (Absoluto / "O Desertor")
+
+O que é: Ele sai completamente do fluxo normal da página. É como se ele flutuasse em uma camada acima de todo mundo. Os outros elementos ignoram que ele existe e ocupam o lugar dele.
+
+Como ele se mexe: Você usa top, left, bottom, right para posicionar ele exatamente onde quiser na tela.
+
+fixed (Fixo na Tela)
+
+O que é: Parecido com o absolute, ele também sai do fluxo da página. A diferença é que o ponto de referência dele é a janela do navegador (viewport) inteira.
+
+Para que serve: Aqueles menus que ficam grudados no topo da tela ou botões de "Voltar ao topo" que nunca somem, mesmo quando você rola a página inteira para baixo.
+
+sticky (Grudento / Híbrido)
+
+O que é: Ele se comporta como relative até que você role a página até um ponto específico. Quando chega nesse ponto, ele "gruda" na tela (comportamento de fixed) enquanto você continua rolando dentro do pai dele.
+
+Para que serve: Cabeçalhos de tabelas que ficam grudados no topo enquanto você lê as linhas para baixo.
+
+E como funciona o absolute com os pais? (A Regra de Ouro)
+Quando você usa position: absolute;, ele precisa saber em relação a quem ele vai se posicionar (afinal, se você colocar top: 0; left: 0;, ele vai colar em quê?).
+
+É aqui que entra o elemento pai:
+
+Cenário 1: O pai NÃO é static (ou seja, é relative, absolute ou fixed)
+
+O que acontece: O elemento filho com absolute vai se alinhar diretamente ao pai. Se o pai está no meio da tela, o filho vai considerar o canto superior esquerdo daquele pai como o seu 0,0.
+
+Uso no dia a dia: É por isso que a gente sempre coloca position: relative; em um card para poder posicionar um selo de "Desconto" ou um botão de "Fechar" (absolute) exatamente no canto de dentro daquele card.
+
+Cenário 2: O elemento NÃO tem pai posicionado (ou o pai é static)
+
+O que acontece: O elemento filho sobe na árvore de elementos procurando alguém que tenha um position diferente de static. Se ele não achar ninguém (ou seja, todo mundo é static até chegar no <body>), ele vai se posicionar diretamente em relação à janela do navegador inteira (a tela do usuário).
