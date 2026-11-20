@@ -15,7 +15,7 @@ const students = [
 let allStudentsAge =0
 
 students.forEach((student, index) => {
-    allStudentsAge = allStudentsAge + student.age
+    allStudentsAge += student.age
 })
 
 const averageAge = allStudentsAge / students.length
