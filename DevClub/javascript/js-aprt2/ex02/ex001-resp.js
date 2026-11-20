@@ -12,3 +12,5 @@ const numbers = (number1, number2) =>{
     else console.log ("O segundo é maior")
 }
 numbers(2,12)
+
+//4
